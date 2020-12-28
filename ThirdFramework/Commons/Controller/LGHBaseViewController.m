@@ -16,9 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    if (self.navigationController) {
+        if (self.navigationController.childViewControllers.count != 0) {
+            self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"navi_back"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        }
+    }
 }
 
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 -(void)viewWillAppear:(BOOL)animated

@@ -11,6 +11,7 @@
 
 #import "Define_Basic.h"
 #import "Function_Basic.h"
+#import "Project_Define.h"
 
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
@@ -20,8 +21,9 @@
 #import <JDStatusBarNotification.h>
 #import "DZNEmptyDataSet.h"
 
-#import "Project_Define.h"
-
+#import "LGHBaseViewController.h"
+#import "LGHNavigationController.h"
+#import "LGHTabBarController.h"
 
 
 #endif /* PrefixHeader_pch */

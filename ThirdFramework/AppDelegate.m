@@ -10,6 +10,7 @@
 #import <CYLTabBarController.h>
 #import <IQKeyboardManager.h>
 #import "TYFPSLabel.h"
+#import "LGHTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    LGHTabBarController *tabBarController = [[LGHTabBarController alloc] init];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    // 解决问题：NavigationController Push时右上角有个黑色阴影。
+    self.window.backgroundColor = UIColor.whiteColor;
     
     /*显示FPS*/
     [TYFPSLabel showInStutasBar];
@@ -33,6 +41,7 @@
     keyboardManager.shouldShowTextFieldPlaceholder = YES; // 是否显示占位文字
     keyboardManager.placeholderFont = [UIFont boldSystemFontOfSize:20]; // 设置占位文字的字体
     keyboardManager.keyboardDistanceFromTextField = 10.0f; // 输入框距离键盘的距离
+    
     return YES;
 }
 

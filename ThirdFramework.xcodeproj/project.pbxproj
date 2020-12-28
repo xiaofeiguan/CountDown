@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B760BA921427E8E008A40B8 /* LGHUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B760BA821427E8E008A40B8 /* LGHUpdateViewController.m */; };
+		5B8FE4BB2599C1BA000CAD1D /* LGHCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4BA2599C1BA000CAD1D /* LGHCommonTools.m */; };
+		5B8FE4BF2599C733000CAD1D /* LGHDetailListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4BE2599C733000CAD1D /* LGHDetailListsViewController.m */; };
+		5B8FE4C82599CA95000CAD1D /* LGHPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4C72599CA95000CAD1D /* LGHPlanViewController.m */; };
+		5B8FE4CE2599D5ED000CAD1D /* LGHSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4CC2599D5ED000CAD1D /* LGHSettingViewController.m */; };
+		5B8FE4D32599DB54000CAD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8FE4D22599DB54000CAD1D /* Main.storyboard */; };
 		7743E4FD210CB8B200E598F8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7743E4FC210CB8B200E598F8 /* MessageUI.framework */; };
 		774E07E6210A040600638487 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 774E07E4210A040600638487 /* UIScrollView+EmptyDataSet.m */; };
 		775A295D2100D44F00E0ED18 /* LGHOtherCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A295C2100D44F00E0ED18 /* LGHOtherCode.m */; };
@@ -88,10 +92,8 @@
 		BA651C25210AB94A00AA81DB /* LGHFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA651C24210AB94A00AA81DB /* LGHFMDBManager.m */; };
 		BA651C29210ABF3800AA81DB /* LGHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA651C28210ABF3800AA81DB /* LGHBaseTableView.m */; };
 		BA651C2C210ABF5D00AA81DB /* LGHPlanTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA651C2B210ABF5D00AA81DB /* LGHPlanTableView.m */; };
-		BA6A21EB2106BAA400EE45BB /* LGHSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A21E92106BAA400EE45BB /* LGHSettingViewController.m */; };
 		BADCD2AC2109A53F00F9AD97 /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BADCD2A62109A53F00F9AD97 /* TableViewAnimationKit.m */; };
 		BADCD2AD2109A53F00F9AD97 /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BADCD2AB2109A53F00F9AD97 /* UITableView+XSAnimationKit.m */; };
-		BAE27137210827A500555CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE27136210827A400555CD7 /* Main.storyboard */; };
 		BAE2713B2108289800555CD7 /* JQFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE271392108289800555CD7 /* JQFMDB.m */; };
 		BAE2713E2108478300555CD7 /* LGHPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE2713D2108478300555CD7 /* LGHPlanModel.m */; };
 		BAE271442108512C00555CD7 /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE271402108512C00555CD7 /* JKDBModel.m */; };
@@ -108,8 +110,15 @@
 
 /* Begin PBXFileReference section */
 		5850E3491549FF0A76C2174E /* libPods-ThirdFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B760BA721427E8E008A40B8 /* LGHUpdateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHUpdateViewController.h; sourceTree = "<group>"; };
-		5B760BA821427E8E008A40B8 /* LGHUpdateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHUpdateViewController.m; sourceTree = "<group>"; };
+		5B8FE4B92599C1BA000CAD1D /* LGHCommonTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHCommonTools.h; sourceTree = "<group>"; };
+		5B8FE4BA2599C1BA000CAD1D /* LGHCommonTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHCommonTools.m; sourceTree = "<group>"; };
+		5B8FE4BD2599C733000CAD1D /* LGHDetailListsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHDetailListsViewController.h; sourceTree = "<group>"; };
+		5B8FE4BE2599C733000CAD1D /* LGHDetailListsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHDetailListsViewController.m; sourceTree = "<group>"; };
+		5B8FE4C62599CA95000CAD1D /* LGHPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHPlanViewController.h; sourceTree = "<group>"; };
+		5B8FE4C72599CA95000CAD1D /* LGHPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHPlanViewController.m; sourceTree = "<group>"; };
+		5B8FE4CB2599D5ED000CAD1D /* LGHSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHSettingViewController.h; sourceTree = "<group>"; };
+		5B8FE4CC2599D5ED000CAD1D /* LGHSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHSettingViewController.m; sourceTree = "<group>"; };
+		5B8FE4D22599DB54000CAD1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7743E4FC210CB8B200E598F8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		774E07E3210A03E800638487 /* DZNEmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNEmptyDataSet.h; sourceTree = "<group>"; };
 		774E07E4210A040600638487 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
@@ -270,15 +279,12 @@
 		BA651C28210ABF3800AA81DB /* LGHBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHBaseTableView.m; sourceTree = "<group>"; };
 		BA651C2A210ABF5D00AA81DB /* LGHPlanTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHPlanTableView.h; sourceTree = "<group>"; };
 		BA651C2B210ABF5D00AA81DB /* LGHPlanTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHPlanTableView.m; sourceTree = "<group>"; };
-		BA6A21E92106BAA400EE45BB /* LGHSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHSettingViewController.m; sourceTree = "<group>"; };
-		BA6A21EA2106BAA400EE45BB /* LGHSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHSettingViewController.h; sourceTree = "<group>"; };
 		BADCD2A62109A53F00F9AD97 /* TableViewAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
 		BADCD2A72109A53F00F9AD97 /* TableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
 		BADCD2A82109A53F00F9AD97 /* UITableView+XSAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XSAnimationKit.h"; sourceTree = "<group>"; };
 		BADCD2A92109A53F00F9AD97 /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		BADCD2AA2109A53F00F9AD97 /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
 		BADCD2AB2109A53F00F9AD97 /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
-		BAE27136210827A400555CD7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAE271392108289800555CD7 /* JQFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQFMDB.m; sourceTree = "<group>"; };
 		BAE2713A2108289800555CD7 /* JQFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQFMDB.h; sourceTree = "<group>"; };
 		BAE2713C2108478300555CD7 /* LGHPlanModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHPlanModel.h; sourceTree = "<group>"; };
@@ -360,6 +366,9 @@
 		5B8FE4B52599B527000CAD1D /* DetailLists */ = {
 			isa = PBXGroup;
 			children = (
+				5B8FE4C02599C73B000CAD1D /* Controllers */,
+				5B8FE4C12599C751000CAD1D /* Views */,
+				5B8FE4C22599C770000CAD1D /* Models */,
 			);
 			path = DetailLists;
 			sourceTree = "<group>";
@@ -367,6 +376,9 @@
 		5B8FE4B62599B5A9000CAD1D /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				5B8FE4C52599CA83000CAD1D /* Controllers */,
+				5B8FE4C42599CA83000CAD1D /* Models */,
+				5B8FE4C32599CA83000CAD1D /* Views */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -375,9 +387,89 @@
 			isa = PBXGroup;
 			children = (
 				BA6A21E82106BAA400EE45BB /* Controllers */,
+				5B8FE4CA2599CEA0000CAD1D /* Models */,
+				5B8FE4C92599CEA0000CAD1D /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
+		};
+		5B8FE4B82599C185000CAD1D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5B8FE4B92599C1BA000CAD1D /* LGHCommonTools.h */,
+				5B8FE4BA2599C1BA000CAD1D /* LGHCommonTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5B8FE4BC2599C37D000CAD1D /* SQLManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SQLManager;
+			sourceTree = "<group>";
+		};
+		5B8FE4C02599C73B000CAD1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B8FE4BD2599C733000CAD1D /* LGHDetailListsViewController.h */,
+				5B8FE4BE2599C733000CAD1D /* LGHDetailListsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B8FE4C12599C751000CAD1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B8FE4C22599C770000CAD1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B8FE4C32599CA83000CAD1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B8FE4C42599CA83000CAD1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B8FE4C52599CA83000CAD1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B8FE4C62599CA95000CAD1D /* LGHPlanViewController.h */,
+				5B8FE4C72599CA95000CAD1D /* LGHPlanViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B8FE4C92599CEA0000CAD1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = ThirdFramework/Items/Settings/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		5B8FE4CA2599CEA0000CAD1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = ThirdFramework/Items/Settings/Models;
+			sourceTree = SOURCE_ROOT;
 		};
 		774E07DF210A03AA00638487 /* DZNEmptyDataSet */ = {
 			isa = PBXGroup;
@@ -507,8 +599,6 @@
 			children = (
 				BA1A66DB21057BBA00EF7AEE /* LGHHomeViewController.h */,
 				BA1A66DD21057BBB00EF7AEE /* LGHHomeViewController.m */,
-				5B760BA721427E8E008A40B8 /* LGHUpdateViewController.h */,
-				5B760BA821427E8E008A40B8 /* LGHUpdateViewController.m */,
 				BA1A66DC21057BBB00EF7AEE /* LGHPastPlanViewController.h */,
 				BA1A66DA21057BBA00EF7AEE /* LGHPastPlanViewController.m */,
 				77CDA3D22101829700F7ADAE /* LGHAddViewController.h */,
@@ -547,7 +637,7 @@
 				BA64D38020FDD1DD00E7759A /* Vender */,
 				775A295A2100D3B200E0ED18 /* OtherCode */,
 				BA3CE8CD20FC736700AF3111 /* Assets.xcassets */,
-				BAE27136210827A400555CD7 /* Main.storyboard */,
+				5B8FE4D22599DB54000CAD1D /* Main.storyboard */,
 				BA3CE8CF20FC736700AF3111 /* LaunchScreen.storyboard */,
 				BA3CE8D220FC736700AF3111 /* Info.plist */,
 				BA3CE8D320FC736700AF3111 /* main.m */,
@@ -574,6 +664,7 @@
 				BA1A66E0210580E300EF7AEE /* Pods */,
 				BA64D3C620FDE46300E7759A /* Category */,
 				BA64D40020FDE46300E7759A /* Controller */,
+				5B8FE4B82599C185000CAD1D /* Tools */,
 				BA64D3C320FDE46300E7759A /* View */,
 			);
 			path = Commons;
@@ -766,8 +857,8 @@
 		BA6A21E82106BAA400EE45BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BA6A21EA2106BAA400EE45BB /* LGHSettingViewController.h */,
-				BA6A21E92106BAA400EE45BB /* LGHSettingViewController.m */,
+				5B8FE4CB2599D5ED000CAD1D /* LGHSettingViewController.h */,
+				5B8FE4CC2599D5ED000CAD1D /* LGHSettingViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -835,6 +926,7 @@
 				BA1D46BE2101D55100A2A097 /* LGHMainView.m */,
 				BA1D46C02101D56500A2A097 /* LGHMainView.xib */,
 				BA1A673F2105E2AF00EF7AEE /* Models */,
+				5B8FE4BC2599C37D000CAD1D /* SQLManager */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -904,11 +996,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE2715D210876DB00555CD7 /* LGHHomeTableViewCell.xib in Resources */,
-				BAE27137210827A500555CD7 /* Main.storyboard in Resources */,
 				BA1D46B12101C13100A2A097 /* 方圆硬笔行书简.ttf in Resources */,
 				BA3CE8D120FC736700AF3111 /* LaunchScreen.storyboard in Resources */,
 				BA1A6726210580F400EF7AEE /* PGDatePicker.bundle in Resources */,
 				BA3CE8CE20FC736700AF3111 /* Assets.xcassets in Resources */,
+				5B8FE4D32599DB54000CAD1D /* Main.storyboard in Resources */,
 				BA1D46C12101D56500A2A097 /* LGHMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -998,6 +1090,7 @@
 				BA64D40820FDE46300E7759A /* UIImage+Clip.m in Sources */,
 				BA64D40520FDE46300E7759A /* YFGetKeyboardView.m in Sources */,
 				BA1A66DE21057BBB00EF7AEE /* LGHPastPlanViewController.m in Sources */,
+				5B8FE4BB2599C1BA000CAD1D /* LGHCommonTools.m in Sources */,
 				BA64D40D20FDE46300E7759A /* UIView+Nib.m in Sources */,
 				BA64D41920FDE46300E7759A /* NSString+MD5.m in Sources */,
 				BA64D40A20FDE46300E7759A /* UIImage+TYLaunchImage.m in Sources */,
@@ -1034,6 +1127,7 @@
 				BA64D40F20FDE46300E7759A /* UIView+Frame.m in Sources */,
 				BA1A6729210580F400EF7AEE /* PGDatePicker+Common.m in Sources */,
 				BA64D41D20FDE46300E7759A /* NSData+Base64.m in Sources */,
+				5B8FE4CE2599D5ED000CAD1D /* LGHSettingViewController.m in Sources */,
 				BA1A853B2100734C00A1B93C /* LGHBaseViewController.m in Sources */,
 				BA64D38920FDD1DD00E7759A /* TYFPSLabel.m in Sources */,
 				BA651C25210AB94A00AA81DB /* LGHFMDBManager.m in Sources */,
@@ -1041,10 +1135,8 @@
 				BAE27155210866DA00555CD7 /* FMDatabaseAdditions.m in Sources */,
 				BA64D38820FDD1DD00E7759A /* TYWeakProxy.m in Sources */,
 				BA64D41B20FDE46300E7759A /* NSDate+Compare.m in Sources */,
-				BA6A21EB2106BAA400EE45BB /* LGHSettingViewController.m in Sources */,
 				BA651C2C210ABF5D00AA81DB /* LGHPlanTableView.m in Sources */,
 				BA1A672B210580F400EF7AEE /* PGDatePickManagerHeaderView.m in Sources */,
-				5B760BA921427E8E008A40B8 /* LGHUpdateViewController.m in Sources */,
 				BA64D41F20FDE46300E7759A /* LGHNavigationController.m in Sources */,
 				BAE27154210866DA00555CD7 /* FMDatabaseQueue.m in Sources */,
 				BA1A671C210580F400EF7AEE /* NSCalendar+PGCurrent.m in Sources */,
@@ -1070,9 +1162,11 @@
 				BA1A67372105860600EF7AEE /* PGPickerColumnCell.m in Sources */,
 				BA64D41420FDE46300E7759A /* UINavigationBar+Awesome.m in Sources */,
 				BA1A671F210580F400EF7AEE /* PGDatePicker+Logic.m in Sources */,
+				5B8FE4C82599CA95000CAD1D /* LGHPlanViewController.m in Sources */,
 				775A295D2100D44F00E0ED18 /* LGHOtherCode.m in Sources */,
 				BADCD2AD2109A53F00F9AD97 /* UITableView+XSAnimationKit.m in Sources */,
 				BA1A6723210580F400EF7AEE /* PGDatePicker+DateHourMinute.m in Sources */,
+				5B8FE4BF2599C733000CAD1D /* LGHDetailListsViewController.m in Sources */,
 				BA64D40620FDE46300E7759A /* UIImage+Size.m in Sources */,
 				BAE27157210866DA00555CD7 /* FMDatabasePool.m in Sources */,
 				BA1A671B210580F400EF7AEE /* PGDatePicker+YearAndMonth.m in Sources */,

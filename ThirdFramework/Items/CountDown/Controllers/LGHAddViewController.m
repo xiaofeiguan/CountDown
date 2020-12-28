@@ -28,6 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (self.navigationController) {
+        self.navigationItem.title = @"创建倒计时";
+    }
+    
     //显示页面
     [self setInit];
     
@@ -124,8 +128,6 @@
     }
     [_db close];
     
-    //完成之后跳转到TabBar的Item1的位置
-    self.tabBarController.selectedIndex = 0;
 }
 
     

@@ -38,7 +38,6 @@
     [super viewDidLoad];
      self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"过期目标";
-    self.view.backgroundColor = [UIColor blueColor];
     UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"navi_back" target:self action:@selector(back)];
     self.navigationItem.leftBarButtonItem = leftItem;
     

@@ -1,5 +1,5 @@
 //
-//  LGHSettingViewController.h
+//  LGHPlanViewController.h
 //  ThirdFramework
 //
 //  Created by 小肥观 on 2020/12/28.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LGHSettingViewController : LGHBaseViewController
+@interface LGHPlanViewController : LGHBaseViewController
 
 @end
 

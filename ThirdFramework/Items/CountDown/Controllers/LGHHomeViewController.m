@@ -11,10 +11,10 @@
 #import "LGHNavigationController.h"
 #import "LGHPastPlanViewController.h"
 #import "LGHAddViewController.h"
-#import "LGHUpdateViewController.h"
 #import "UIViewController+HHTransition.h"
 #import "LGHHomeTableViewCell.h"
 #import "TableViewAnimationKit.h"
+#import "LGHCommonTools.h"
 #import "FMDatabase.h"
 #import "LGHPlanModel.h"
 #import <MBProgressHUD.h>
@@ -29,8 +29,6 @@
 @property(nonatomic,strong)NSMutableArray *plans;
 
 @property(nonatomic, strong) NSMutableDictionary *timerDict;
-
-@property(nonatomic,strong)NSString *currentVersionReleaseNote;
 
 @property(nonatomic,strong)NSString *currentNotifyName;
 
@@ -84,7 +82,7 @@ return _plans ;
     
     BOOL isTrueiPhoneX = ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO);
     
-    if ( [self judgeNeedUpdate]) {
+    if ( [LGHCommonTools  judgeNeedUpdate]) {
        UIAlertController *alertController = [UIAlertController  alertControllerWithTitle:@"提示" message:@"当前需要升级" preferredStyle:UIAlertControllerStyleAlert];
         [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/gamesir-update-tool/id1372674215?mt=8"]];
@@ -92,39 +90,7 @@ return _plans ;
         [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             
         }]];
-        
     }
-    
-   
-    
-}
-
-/**
- * 判断是否需要升级
- */
--(BOOL)judgeNeedUpdate
-{
-    NSDictionary *bundleDict = [NSBundle mainBundle].infoDictionary;
-    NSString *appID = bundleDict[@"CFBundleIdentifier"];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/lookup?bundleId=%@",appID]];
-    
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    if (data) {
-        NSDictionary *lookupDict =[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        if ([lookupDict[@"resultCount"] integerValue] == 1) {
-            NSString* appStoreVersion = lookupDict[@"results"][0][@"version"];
-            NSString* currentVersion = bundleDict[@"CFBundleShortVersionString"];
-            if ([appStoreVersion compare:currentVersion options:NSNumericSearch] == NSOrderedDescending) {
-                NSLog(@"\n\nNeed to update. Appstore version %@ is greater than %@",appStoreVersion, currentVersion);
-                self.currentVersionReleaseNote = lookupDict[@"results"][0][@"releaseNotes"];
-                return YES;
-            } else {
-                NSLog(@"no need update");
-                return NO;
-            }
-        }
-    }
-    return NO;
 }
 
 
@@ -168,22 +134,28 @@ return _plans ;
 
 -(void)setNaviBarItem
 {
-    UIBarButtonItem *editButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"倒时" style:UIBarButtonItemStylePlain target:self action:@selector(refreshLoad)];
+    UILabel *titleLabel = [[UILabel alloc]init];
     NSDictionary *textAttributes = @{
-                                     NSForegroundColorAttributeName: [UIColor blackColor],
-                                     NSFontAttributeName:[UIFont fontWithName:@"方圆硬笔行书简" size:30]
-                                     };
-    [editButtonItem setTitleTextAttributes:textAttributes forState:UIControlStateNormal];
-    self.navigationItem.leftBarButtonItem = editButtonItem;
-    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImageName:@"navi_timeout" target:self action:@selector(homeRightItemAction)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+        NSForegroundColorAttributeName: [UIColor blackColor],
+        NSFontAttributeName:[UIFont fontWithName:@"方圆硬笔行书简" size:30]
+    };
+    NSAttributedString *str = [[NSAttributedString alloc]initWithString:@"首页" attributes:textAttributes];
+    titleLabel.attributedText = str;
+    self.navigationItem.titleView = titleLabel;
+    
+    //左ButtonItem
+    UIBarButtonItem *leftItem01 = [UIBarButtonItem itemWithImageName:@"navi_add" target:self action:@selector(addCountDownAction)];
+    
+    self.navigationItem.leftBarButtonItem = leftItem01;
+    //右ButtonItem
+    UIBarButtonItem *rightItem01 = [UIBarButtonItem itemWithImageName:@"navi_timeout" target:self action:@selector(homeRightItemAction)];
+    
+    self.navigationItem.rightBarButtonItem = rightItem01 ;
 }
 
 -(void)refreshLoad
 {
-    
     [self.tableView reloadData];
-//     [TableViewAnimationKit showWithAnimationType:2 tableView:self.tableView];
 }
 
 -(void)homeRightItemAction
@@ -196,6 +168,11 @@ return _plans ;
     self.hidesBottomBarWhenPushed = YES;
     [self hh_presentCircleVC:pastNaviVC point:CGPointMake([UIScreen mainScreen].bounds.size.width-40, 20) completion:nil];
     self.hidesBottomBarWhenPushed = NO;
+}
+
+-(void)addCountDownAction{
+    LGHAddViewController *addVC = [[LGHAddViewController alloc]init];
+    [self.navigationController pushViewController:addVC animated:YES];
 }
 
 
@@ -332,6 +309,7 @@ return _plans ;
             [timer invalidate];
             NSLog(@"更新数据失败");
         }
+        [_db close];
     }else{
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSCalendar* chineseClendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
@@ -361,11 +339,6 @@ return _plans ;
        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow.rootViewController.view animated:YES];
         hud.label.text = @"目标已过期，不可修改";
         return;
-    }else{
-        LGHUpdateViewController *updateVC = [[LGHUpdateViewController alloc]init];
-        [self.navigationController  pushViewController:updateVC animated:YES];
-        self.tabBarController.tabBar.hidden = YES;
-        self.navigationController.delegate = self;
     }
 }
 

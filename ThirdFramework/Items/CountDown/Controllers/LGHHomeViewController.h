@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LGHHomeViewController : UIViewController
+@interface LGHHomeViewController : LGHBaseViewController
 
 @end
