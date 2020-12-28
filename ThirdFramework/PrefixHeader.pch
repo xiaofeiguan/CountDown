@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  ThirdFramework
+//
+//  Created by tangkaifu on 2018/7/16.
+//  Copyright © 2018年 apple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Define_Basic.h"
+#import "Function_Basic.h"
+
+#import <Masonry.h>
+#import <UIImageView+WebCache.h>
+#import <UIImageView+HighlightedWebCache.h>
+# import <IQKeyboardManager.h>
+#import <AFNetworking.h>
+#import <JDStatusBarNotification.h>
+#import "DZNEmptyDataSet.h"
+
+#import "Project_Define.h"
+
+
+
+#endif /* PrefixHeader_pch */

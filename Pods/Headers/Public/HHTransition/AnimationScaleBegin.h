@@ -1,0 +1,1 @@
+../../../HHTransition/HHTransition/AnimationScaleBegin.h
