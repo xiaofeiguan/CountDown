@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4537CE259ACF1D0088C684 /* NSDate+EBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537C0259ACF1D0088C684 /* NSDate+EBAdd.m */; };
+		5B4537CF259ACF1D0088C684 /* EBCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537C1259ACF1D0088C684 /* EBCalendarView.m */; };
+		5B4537D0259ACF1D0088C684 /* calendar_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B4537C3259ACF1D0088C684 /* calendar_left.png */; };
+		5B4537D1259ACF1D0088C684 /* EBCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537C4259ACF1D0088C684 /* EBCalendarModel.m */; };
+		5B4537D2259ACF1D0088C684 /* EBCalenderWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537C5259ACF1D0088C684 /* EBCalenderWeekView.m */; };
+		5B4537D3259ACF1D0088C684 /* EBCalenderNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537C6259ACF1D0088C684 /* EBCalenderNavigationView.m */; };
+		5B4537D4259ACF1D0088C684 /* EBCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537C9259ACF1D0088C684 /* EBCalendarDayCell.m */; };
+		5B4537D5259ACF1D0088C684 /* UIColor+EBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537CA259ACF1D0088C684 /* UIColor+EBAdd.m */; };
+		5B4537D6259ACF1D0088C684 /* calendar_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B4537CD259ACF1D0088C684 /* calendar_right.png */; };
+		5B4537D9259ACFAF0088C684 /* LGHCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4537D8259ACFAF0088C684 /* LGHCalendarView.m */; };
 		5B8FE4BB2599C1BA000CAD1D /* LGHCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4BA2599C1BA000CAD1D /* LGHCommonTools.m */; };
 		5B8FE4BF2599C733000CAD1D /* LGHDetailListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4BE2599C733000CAD1D /* LGHDetailListsViewController.m */; };
 		5B8FE4C82599CA95000CAD1D /* LGHPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FE4C72599CA95000CAD1D /* LGHPlanViewController.m */; };
@@ -110,6 +120,24 @@
 
 /* Begin PBXFileReference section */
 		5850E3491549FF0A76C2174E /* libPods-ThirdFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4537BE259ACF1D0088C684 /* UIColor+EBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+EBAdd.h"; sourceTree = "<group>"; };
+		5B4537BF259ACF1D0088C684 /* EBCalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCalendarDayCell.h; sourceTree = "<group>"; };
+		5B4537C0259ACF1D0088C684 /* NSDate+EBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EBAdd.m"; sourceTree = "<group>"; };
+		5B4537C1259ACF1D0088C684 /* EBCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCalendarView.m; sourceTree = "<group>"; };
+		5B4537C2259ACF1D0088C684 /* EBCalenderNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCalenderNavigationView.h; sourceTree = "<group>"; };
+		5B4537C3259ACF1D0088C684 /* calendar_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_left.png; sourceTree = "<group>"; };
+		5B4537C4259ACF1D0088C684 /* EBCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCalendarModel.m; sourceTree = "<group>"; };
+		5B4537C5259ACF1D0088C684 /* EBCalenderWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCalenderWeekView.m; sourceTree = "<group>"; };
+		5B4537C6259ACF1D0088C684 /* EBCalenderNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCalenderNavigationView.m; sourceTree = "<group>"; };
+		5B4537C7259ACF1D0088C684 /* EBCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCalendarView.h; sourceTree = "<group>"; };
+		5B4537C8259ACF1D0088C684 /* NSDate+EBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EBAdd.h"; sourceTree = "<group>"; };
+		5B4537C9259ACF1D0088C684 /* EBCalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCalendarDayCell.m; sourceTree = "<group>"; };
+		5B4537CA259ACF1D0088C684 /* UIColor+EBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EBAdd.m"; sourceTree = "<group>"; };
+		5B4537CB259ACF1D0088C684 /* EBCalenderWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCalenderWeekView.h; sourceTree = "<group>"; };
+		5B4537CC259ACF1D0088C684 /* EBCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCalendarModel.h; sourceTree = "<group>"; };
+		5B4537CD259ACF1D0088C684 /* calendar_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_right.png; sourceTree = "<group>"; };
+		5B4537D7259ACFAF0088C684 /* LGHCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHCalendarView.h; sourceTree = "<group>"; };
+		5B4537D8259ACFAF0088C684 /* LGHCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHCalendarView.m; sourceTree = "<group>"; };
 		5B8FE4B92599C1BA000CAD1D /* LGHCommonTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHCommonTools.h; sourceTree = "<group>"; };
 		5B8FE4BA2599C1BA000CAD1D /* LGHCommonTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHCommonTools.m; sourceTree = "<group>"; };
 		5B8FE4BD2599C733000CAD1D /* LGHDetailListsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHDetailListsViewController.h; sourceTree = "<group>"; };
@@ -343,6 +371,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B4537BD259ACF1D0088C684 /* EBCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				5B4537D7259ACFAF0088C684 /* LGHCalendarView.h */,
+				5B4537D8259ACFAF0088C684 /* LGHCalendarView.m */,
+				5B4537C3259ACF1D0088C684 /* calendar_left.png */,
+				5B4537CD259ACF1D0088C684 /* calendar_right.png */,
+				5B4537BF259ACF1D0088C684 /* EBCalendarDayCell.h */,
+				5B4537C9259ACF1D0088C684 /* EBCalendarDayCell.m */,
+				5B4537CC259ACF1D0088C684 /* EBCalendarModel.h */,
+				5B4537C4259ACF1D0088C684 /* EBCalendarModel.m */,
+				5B4537C7259ACF1D0088C684 /* EBCalendarView.h */,
+				5B4537C1259ACF1D0088C684 /* EBCalendarView.m */,
+				5B4537C2259ACF1D0088C684 /* EBCalenderNavigationView.h */,
+				5B4537C6259ACF1D0088C684 /* EBCalenderNavigationView.m */,
+				5B4537CB259ACF1D0088C684 /* EBCalenderWeekView.h */,
+				5B4537C5259ACF1D0088C684 /* EBCalenderWeekView.m */,
+				5B4537C8259ACF1D0088C684 /* NSDate+EBAdd.h */,
+				5B4537C0259ACF1D0088C684 /* NSDate+EBAdd.m */,
+				5B4537BE259ACF1D0088C684 /* UIColor+EBAdd.h */,
+				5B4537CA259ACF1D0088C684 /* UIColor+EBAdd.m */,
+			);
+			path = EBCalendarView;
+			sourceTree = "<group>";
+		};
 		5B8FE4B32599B4FC000CAD1D /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,9 +543,10 @@
 			path = OtherCode;
 			sourceTree = "<group>";
 		};
-		BA1A66E0210580E300EF7AEE /* Pods */ = {
+		BA1A66E0210580E300EF7AEE /* ThirdFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5B4537BD259ACF1D0088C684 /* EBCalendarView */,
 				774E07DF210A03AA00638487 /* DZNEmptyDataSet */,
 				BADCD2A52109A53F00F9AD97 /* TableViewAnimationKit */,
 				BAE27148210866DA00555CD7 /* fmdb */,
@@ -501,7 +555,7 @@
 				BA1A672E2105860600EF7AEE /* PGPickerView */,
 				BA1A66E1210580F400EF7AEE /* PGDatePicker */,
 			);
-			path = Pods;
+			path = ThirdFramework;
 			sourceTree = "<group>";
 		};
 		BA1A66E1210580F400EF7AEE /* PGDatePicker */ = {
@@ -661,7 +715,7 @@
 				BA64D39C20FDD58400E7759A /* Foundation+Log.m */,
 				BA64D39A20FDD53400E7759A /* Function_Basic.h */,
 				BA651C26210ABE0400AA81DB /* Project_Define.h */,
-				BA1A66E0210580E300EF7AEE /* Pods */,
+				BA1A66E0210580E300EF7AEE /* ThirdFramework */,
 				BA64D3C620FDE46300E7759A /* Category */,
 				BA64D40020FDE46300E7759A /* Controller */,
 				5B8FE4B82599C185000CAD1D /* Tools */,
@@ -995,6 +1049,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4537D6259ACF1D0088C684 /* calendar_right.png in Resources */,
+				5B4537D0259ACF1D0088C684 /* calendar_left.png in Resources */,
 				BAE2715D210876DB00555CD7 /* LGHHomeTableViewCell.xib in Resources */,
 				BA1D46B12101C13100A2A097 /* 方圆硬笔行书简.ttf in Resources */,
 				BA3CE8D120FC736700AF3111 /* LaunchScreen.storyboard in Resources */,
@@ -1101,7 +1157,9 @@
 				BA1A672A210580F400EF7AEE /* PGDatePicker+MonthDay.m in Sources */,
 				BA64D41320FDE46300E7759A /* UIBarButtonItem+Item.m in Sources */,
 				BAE271442108512C00555CD7 /* JKDBModel.m in Sources */,
+				5B4537CE259ACF1D0088C684 /* NSDate+EBAdd.m in Sources */,
 				BAE271452108512C00555CD7 /* JKDBHelper.m in Sources */,
+				5B4537D3259ACF1D0088C684 /* EBCalenderNavigationView.m in Sources */,
 				BA1A6722210580F400EF7AEE /* PGDatePicker+MonthDayHourMinuteSecond.m in Sources */,
 				BA1A6721210580F400EF7AEE /* PGDatePicker+MonthDayHourMinute.m in Sources */,
 				BA64D40920FDE46300E7759A /* UIImage+Snap.m in Sources */,
@@ -1113,6 +1171,8 @@
 				BAE2715C210876DB00555CD7 /* LGHHomeTableViewCell.m in Sources */,
 				BAE27156210866DA00555CD7 /* FMDatabase.m in Sources */,
 				BA1A6715210580F400EF7AEE /* PGDatePicker+Date.m in Sources */,
+				5B4537CF259ACF1D0088C684 /* EBCalendarView.m in Sources */,
+				5B4537D5259ACF1D0088C684 /* UIColor+EBAdd.m in Sources */,
 				BA3CE8D420FC736700AF3111 /* main.m in Sources */,
 				BA3CE8C320FC736700AF3111 /* AppDelegate.m in Sources */,
 				BA64D41820FDE46300E7759A /* NSString+YFTimestamp.m in Sources */,
@@ -1145,6 +1205,8 @@
 				BA1A6725210580F400EF7AEE /* PGDatePicker+DateHour.m in Sources */,
 				BA64D41620FDE46300E7759A /* NSString+Encrypt.m in Sources */,
 				BA1A6727210580F400EF7AEE /* PGDatePicker+TimeAndSecond.m in Sources */,
+				5B4537D2259ACF1D0088C684 /* EBCalenderWeekView.m in Sources */,
+				5B4537D9259ACFAF0088C684 /* LGHCalendarView.m in Sources */,
 				BA64D41020FDE46300E7759A /* UITabBarController+AddChildVC.m in Sources */,
 				BA1A673E2105BDCA00EF7AEE /* UIColor+Gradient.m in Sources */,
 				774E07E6210A040600638487 /* UIScrollView+EmptyDataSet.m in Sources */,
@@ -1153,11 +1215,13 @@
 				BA1A671D210580F400EF7AEE /* PGDatePicker+Time.m in Sources */,
 				BA64D39D20FDD58400E7759A /* Foundation+Log.m in Sources */,
 				BA1A6718210580F400EF7AEE /* UIColor+PGHex.m in Sources */,
+				5B4537D4259ACF1D0088C684 /* EBCalendarDayCell.m in Sources */,
 				BADCD2AC2109A53F00F9AD97 /* TableViewAnimationKit.m in Sources */,
 				BA64D40E20FDE46300E7759A /* UIView+ViewController.m in Sources */,
 				BA1A67392105860600EF7AEE /* PGPickerView.m in Sources */,
 				BAE27158210866DA00555CD7 /* FMResultSet.m in Sources */,
 				BA64D41E20FDE46300E7759A /* LGHTabBarController.m in Sources */,
+				5B4537D1259ACF1D0088C684 /* EBCalendarModel.m in Sources */,
 				BA64D41220FDE46300E7759A /* NSURL+Parameters.m in Sources */,
 				BA1A67372105860600EF7AEE /* PGPickerColumnCell.m in Sources */,
 				BA64D41420FDE46300E7759A /* UINavigationBar+Awesome.m in Sources */,
